@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--link swiper -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <!--main css -->
+    <link rel="stylesheet" href="style.css">
+    <title>ecom-website</title>
+</head>
+<body>
+    <div class="card">
+        <div class="top-card">
+            <h3>Total price : 0$</h3>
+            <button class="close">X</button>
+        </div>
+        <div class="items-container">
+            <div class="item-box">
+                <img src="img/product/0.png" alt="#">
+                <button class="minus">-</button>
+                <p class="count">0</p>
+                <button class="plus">+</button>
+                <button class="delete">🥡</button>
+            </div>
+       
+        </div>
+        <div class="bottom-card">
+            <button class="checkout-btn">checkout</button>
+            <button class="close-btn" >keep looking</button>
+        </div>
+    </div>
+    <header>
+        
+        <div class="top-header">
+            <div class="container">
+                <a href="./index.html" class="logo"><span>Nazz </span>code</a>
+                <form action="#">
+                    <select name="category" id="pages">
+                        <option value="#mobiles">mobiles</option>
+                        <option value="#appliances">appliances</option>
+                        <option value="#hot-deals">hot deals</option>
+                        <option value="#electronics">electronics</option>
+                    </select>
+                    <input type="search" placeholder="search for products">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="header-icons">
+                    <i class="fa-regular fa-heart"><span>0</span></i>
+                    <i class="fa-regular fa-credit-card"><span>0</span></i>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+            <div class="left">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="nav-menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./blog">Blog</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <a class="sign-in" href="./sign-in.html">Sign-in</a>
+                <a href="./log-in.html">Log-in</a>
+            </div>
+        </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section class="banners1">
+            <div class="container">
+                <div class="img-wrraper swiper1 swiper">
+                    <div class="slider-wrraper swiper-wrapper">    
+                        <img class="swiper-slide" src="img/banner_home1.png" alt="#">
+                        <img class="swiper-slide" src="img/banner_home2.png" alt="#">
+                    </div>
+                </div>
+               <img src="img/banner_home3.png" alt="#">
+            </div>
+            </div>
+            <div class="bottom-imgs">
+                <div class="container">
+                    <div class="img-box">
+                        <img src="img/banner3_1.png" alt="">
+                        <div class="desc">
+                            <h3>digital disc</h3>
+                            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam.</h4>
+                        </div>
+                    </div>
+                     <div class="img-box">
+                        <img src="img/banner3_2.png" alt="">
+                        <div class="desc">
+                            <h3>digital disc</h3>
+                            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam.</h4>
+                        </div>
+                    </div>
+                     <div class="img-box">
+                        <img src="img/banner3_3.png" alt="">
+                        <div class="desc">
+                            <h3>digital disc</h3>
+                            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam.</h4>
+                        </div>
+                    </div>
+                     <div class="img-box">
+                        <img src="img/banner3_4.png" alt="">
+                        <div class="desc">
+                            <h3>digital disc</h3>
+                            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products1" id="hot-deals">
+            <div class="container">
+                <div class="products-head">
+                    <h3>hot deals</h3>
+                </div>
+                <div class="products-container swiper2 swiper">
+                    <div class="slider-wrapper swiper-wrapper">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="banners2">
+            <div class="container">
+            <div class="imgs-banner">
+                <img class="img1" src="img/banner_box1.jpg" alt="#">
+                <img class="img2" src="img/banner_box2.jpg" alt="#">
+            </div>
+            </div>
+        </section>
+        <section class="products1" id="mobiles">
+            <div class="container">
+                <div class="products-head">
+                    <h3>mobiles</h3>
+                </div>
+                <div class="products-container swiper2 swiper">
+                    <div class="slider-wrapper2 swiper-wrapper">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="products1 appliances" id="appliances">
+            <div class="container">
+                <div class="products-head">
+                    <h3>APPLIANCES</h3>
+                </div>
+                <div class="products-container swiper2 swiper">
+                    <div class="slider-wrapper3 swiper-wrapper">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="products1 electronics" id="electronics">
+            <div class="container">
+                <div class="products-head">
+                    <h3>ELECTRONICS</h3>
+                </div>
+                <div class="products-container swiper2 swiper">
+                    <div class="slider-wrapper4 swiper-wrapper">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="column1">
+                    <h3><span>Nazz </span>Code</h3>
+                    <h4>Contact me :</h4>
+                    <p>phone number : 021-22-23-24</p>
+                    <p>Email : nasser.ahmedg20@gmail.com</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+                <div class="column2">
+                    <h3><a href="#">About me</a></h3>
+                    <p><a href="#">my work</a></p>
+                    <p><a href="#">portfolio</a></p>
+                    <p><a href="#">front end developer</a></p>
+                </div>
+                <div class="column3">
+                    <h3>service</h3>
+                    <p>responsive design</p>
+                    <p>build ecom-website</p>
+                    <p>clean code</p>
+                </div>
+            </div>
+            </div>
+            <div class="reserve">
+                All content reserved to Nazzcode @2026
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
