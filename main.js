@@ -61,7 +61,7 @@ fetch('products.json')
     const container = document.querySelector('.slider-wrapper2');
     container.innerHTML = '';
     data.forEach(product => {
-      if (product.catetory === 'mobiles') {
+      if (product.category === 'mobiles') {
         container.innerHTML += ` <div class="product-box swiper-slide">
                                     <img src="${product.img}" alt="#">
                                     <h3>${product.name}</h3>
@@ -78,7 +78,7 @@ fetch('products.json')
     const container = document.querySelector('.slider-wrapper3');
     container.innerHTML = '';
     data.forEach(product => {
-      if (product.catetory === 'appliances') {
+      if (product.category === 'appliances') {
         container.innerHTML += ` <div class="product-box swiper-slide">
                                     <img src="${product.img}" alt="#">
                                     <h3>${product.name}</h3>
