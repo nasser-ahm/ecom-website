@@ -34,25 +34,27 @@ ul {
 }
 
 .container {
-    width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
+margin-left: auto;     /* centers it */
+margin-right: auto;    /* centers it */
+padding-left: 15px;    /* side space */
+padding-right: 15px;	
 }
-@media (min-width:550px) {
-    .container {
-        width: 540px;
-    }
-}
+
+
 @media (min-width:768px) {
+
     .container {
         width: 750px;
-        margin: auto;
     }
 }
 @media (min-width:992px) {
     .container {
-        width:970px;
-     
+        width:970px
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
     }
 }
 
@@ -65,8 +67,6 @@ header {
 header .top-header {
     display: flex;
     height: 70px;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 10px;
     background-color: var(--white_color);
 }
@@ -157,13 +157,12 @@ header .top-header .header-icons .fa-credit-card span {
 header .bottom-header {
     display: flex;
     height: 56px;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
     background-color: var(--main_color);
     color: var(--bg_color);
     border-top: 2px solid var(--p_color);
     box-shadow: 5px 5px 10px gray;
+    
 }
 header .bottom-header .container {
     display: flex;
@@ -276,6 +275,11 @@ main .banners1 .container img {
     
     border-top: 3px solid var(--main_color);
     padding: 20px 20px ;
+    
+}
+.products1 .products-container .slider-wrraper {
+    display: flex;
+    flex-wrap: wrap;
 }
 .products1 .swiper2 {
     position: relative;
@@ -344,7 +348,7 @@ main .banners1 .container img {
 }
 .banners2 .imgs-banner {
     display: flex;
-    gap: 20px;
+    
 }
 
 .banners2 .imgs-banner .img1 {
@@ -457,7 +461,7 @@ footer .reserve {
     height: 100%;
     margin: 10px 0;
     gap: 10px;
-    overflow: hidden;
+    overflow-y: auto;
 }
 .card .item-box {
     display: flex;
@@ -500,6 +504,22 @@ footer .reserve {
 }
 
 
+@media (max-width:768px){
+
+main .banners1 .container{
+    flex-direction: column;
+}
+
+main .banners1 .swiper{
+    width:100%;
+    height:auto;
+}
+.banners1 .imgremove {
+    display: none;
+}
+
+
+}
 @media (max-width:992px) {
     header .top-header .container form  {
         display: none;
@@ -507,7 +527,46 @@ footer .reserve {
     header .bottom-header .left .nav-menu {
         display: none;
     }
+    header .top-header .container{
+        display: flex;
+        width: 100%;
+    }
+    header .bottom-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.banners1  .bottom-imgs .container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+.banners1  .bottom-imgs .container .img-box {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
     
+}
+.banners1  .bottom-imgs .container .img-box .desc h3 {
+    color: var(--main_color);
+    margin-bottom: 4px;
+}
+
+.banners1  .bottom-imgs .container .img-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+footer .container .row{
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+footer .container .row .column3{
+    flex-wrap: wrap;
+}
 }
 
 

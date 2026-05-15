@@ -128,7 +128,6 @@ fetch('products.json')
   // Optional parameters
   loop: true,
   autoplay : true,
-  slidesPerView: 6,
   spaceBetween: 20,
 
   // If we need pagination
@@ -146,8 +145,24 @@ fetch('products.json')
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+ 
+    breakpoints: {
+    0: {
+      slidesPerView: 2,
+      
+    },
 
-  
+    768: {
+      slidesPerView: 4,
+      
+    },
+
+    1024: {
+      slidesPerView: 5,
+      
+    }
+  }
+
 });
 
 
